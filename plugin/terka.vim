@@ -9,6 +9,21 @@ function! TerkaCreateTask()
 	execute "!" . g:terka . " create task"
 endfunction
 
+function! TerkaCreateEpic()
+	silent !clear
+	execute "!" . g:terka . " create epic"
+endfunction
+
+function! TerkaCreateStory()
+	silent !clear
+	execute "!" . g:terka . " create story"
+endfunction
+
+function! TerkaCreateSprint()
+	silent !clear
+	execute "!" . g:terka . " create sprint"
+endfunction
+
 function! TerkaListProjects()
 	silent !clear
 	execute "Dispatch" . " " . g:terka . " list projects --tags work --no-expand"
@@ -44,6 +59,9 @@ function! TerkaListAllStories()
 	execute "Dispatch" . " " . g:terka . " list stories --columns id,name,project --all --no-expand"
 endfunction
 command! TerkaTask call TerkaCreateTask()
+command! TerkaEpic call TerkaCreateEpic()
+command! TerkaStory call TerkaCreateStory()
+command! TerkaStory call TerkaCreateSprint()
 command! TerkaProjects call TerkaListProjects()
 command! TerkaSprints call TerkaListSprints()
 command! TerkaTags call TerkaListTags()
