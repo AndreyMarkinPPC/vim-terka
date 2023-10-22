@@ -21,6 +21,9 @@ let g:terka="/path/to/terka"
 | Command          | Description                                                                                                                                                                                                                                                                            |
 | :--------------  | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  |
 | `:TerkaTask`   |  Opens vim to enter detail of a new task.                                                                        |
+| `:TerkaEpic`   |  Opens vim to enter detail of a new epic.                                                                        |
+| `:TerkaStory`   |  Opens vim to enter detail of a new story.                                                                        |
+| `:TerkaSprint`   |  Opens vim to enter detail of a new sprint.                                                                        |
 | `:TerkaProjects`     |  Shows active projects in quickfix window                                                                                                                                                           |.
 | `:TerkaSprints`      | Shows active and planned sprints in quickfix window                                                                                                                                                                                                  |
 | `:TerkaTags`     | Shows tags in quickfix window.                                                                                                                      |

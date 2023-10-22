@@ -61,7 +61,7 @@ endfunction
 command! TerkaTask call TerkaCreateTask()
 command! TerkaEpic call TerkaCreateEpic()
 command! TerkaStory call TerkaCreateStory()
-command! TerkaStory call TerkaCreateSprint()
+command! TerkaSprint call TerkaCreateSprint()
 command! TerkaProjects call TerkaListProjects()
 command! TerkaSprints call TerkaListSprints()
 command! TerkaTags call TerkaListTags()
