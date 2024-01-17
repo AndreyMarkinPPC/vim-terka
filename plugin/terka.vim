@@ -26,19 +26,27 @@ endfunction
 
 function! TerkaListProjects()
 	silent !clear
-	execute "Dispatch" . " " . g:terka . " list projects --tags work --no-expand"
+	execute "Dispatch" . " " . g:terka . " list projects --columns id,name --no-expand"
+endfunction
+function! TerkaListAllProjects()
+	silent !clear
+	execute "Dispatch" . " " . g:terka . " list projects --columns id,name --all --no-expand"
 endfunction
 function! TerkaListSprints()
 	silent !clear
-	execute "Dispatch" . " " . g:terka . " list sprints"
+	execute "Dispatch" . " " . g:terka . " list sprints --column id,start_date,end_date,goal,status --no-expand"
+endfunction
+function! TerkaListAllSprints()
+	silent !clear
+	execute "Dispatch" . " " . g:terka . " list sprints --column id,start_date,end_date,goal,status --no-expand --all"
 endfunction
 function! TerkaListTags()
 	silent !clear
-	execute "Dispatch" . " " . g:terka . " list tags"
+	execute "Dispatch" . " " . g:terka . " list tags --no-expand"
 endfunction
 function! TerkaListUsers()
 	silent !clear
-	execute "Dispatch" . " " . g:terka . " list users"
+	execute "Dispatch" . " " . g:terka . " list users --no-expand"
 endfunction
 function! TerkaListEpics()
 	silent !clear
